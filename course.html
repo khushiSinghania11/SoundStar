@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> Sound Star </title>
+        <link rel="icon" href="favicon1.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="logo.jpg" alt="Logo not available"> </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="course.html">Courses</a></li>
+                         <li><a href="blog.html">Blog</a></li>
+                         <li><a href="about.html">About</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                 </div>
+                 <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1> Our Courses </h1>
+        </section>
+
+        <!-----------------CONTENT----------------->
+        <section class="course">
+            <h1> Courses We Offer </h1>
+            <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nam, adipisci sequi, eos porro mollitia neque vero natus dignissimos beatae sit cum, officia sint vitae illum consequatur molestias deserunt expedita?</h4>
+            <div class="row">
+                <div class="course-col">
+                    <h3> Instruments </h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati natus, laborum fugit iste tempore veritatis. Atque dolor necessitatibus labore!</p>
+                </div>
+                <div class="course-col">
+                    <h3> Harmonization </h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati natus, laborum fugit iste tempore veritatis. Atque dolor necessitatibus labore!</p>
+                </div>
+                <div class="course-col">
+                    <h3> Melodies </h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati natus, laborum fugit iste tempore veritatis. Atque dolor necessitatibus labore!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+                <h1> Best of Features </h1>
+                <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi soluta fugiat esse ipsam officiis ad a laborum id voluptate beatae? At numquam hic dolores fugit minima nostrum rem, ipsa necessitatibus!</h4>
+                <div class="row">
+                    <div class="feat-col">
+                        <img src="dd.jpg">
+                        <div class="layer">
+                            <h3> Live doubt clearing sessions </h3>
+                        </div>
+                    </div>
+                    <div class="feat-col">
+                        <img src="inst.jpg">
+                        <div class="layer">
+                            <h3> Courses valid till lifetime </h3>
+                        </div>
+                    </div>
+                    <div class="feat-col">
+                        <img src="studio.jpg">
+                        <div class="layer">
+                            <h3> Access to studio </h3>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-------------------FOOTER------------------->
+        <section class="footer">
+            <h1>About us</h1>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Autem maiores nesciunt quaerat alias fugit vero atque consectetur amet? Nam iure omnis culpa error quos dolorem ex in porro quae voluptate?</h4>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu()
+            {
+                navLinks.style.right = "0";
+            }
+            function hideMenu()
+            {
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>

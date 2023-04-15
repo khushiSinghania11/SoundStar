@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> Sound Star </title>
+        <link rel="icon" href="favicon1.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="logo.jpg" alt="Logo not available"> </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="course.html">Courses</a></li>
+                         <li><a href="blog.html">Blog</a></li>
+                         <li><a href="about.html">About</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                 </div>
+                 <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1> Contact Us </h1>
+        </section>
+
+        <!-----------------CONTENT----------------->
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>
+                                XYX BUILDING 
+                            </h5>
+                            <p> AB Road, DEF, GHI, India</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>
+                                +91 **********
+                            </h5>
+                            <p> Monday to Saturday 6pm - 9pm </p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>
+                                info@SoundStar.com
+                            </h5>
+                            <p> Email us your queries</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="name" placeholder="Enter your name..." required>
+                        <input type="email" name="email" placeholder="Enter your email..." required>
+                        <input type="text" name="subject" placeholder="Enter your subject..." required>
+                        <textarea rows="8" name="message" placeholder="Enter your message..." required></textarea>
+                        <button type="submit" class="main-btn red-btn">Send Message </button>
+
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        
+        <section class="footer">
+            <h1>About us</h1>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Autem maiores nesciunt quaerat alias fugit vero atque consectetur amet? Nam iure omnis culpa error quos dolorem ex in porro quae voluptate?</h4>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu()
+            {
+                navLinks.style.right = "0";
+            }
+            function hideMenu()
+            {
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>

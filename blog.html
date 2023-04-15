@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> Sound Star </title>
+        <link rel="icon" href="favicon1.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="logo.jpg" alt="Logo not available"> </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="course.html">Courses</a></li>
+                         <li><a href="blog.html">Blog</a></li>
+                         <li><a href="about.html">About</a></li>
+                         <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                 </div>
+                 <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1> Local Blog </h1>
+        </section>
+
+        <!-----------------CONTENT----------------->
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="enroll.jpg">
+                    <h2> Our Blog Page </h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe possimus eum illum error ratione! Omnis, exercitationem voluptates dolor tempora autem sunt blanditiis fugiat consequatur delectus rem fuga incidunt accusantium eveniet.</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laudantium vero ea hic saepe quod ex numquam, iusto velit excepturi, molestiae mollitia neque, accusamus eveniet ab explicabo unde voluptas culpa.</p>
+                    <br> 
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia assumenda quos amet accusamus quae architecto expedita ipsam aperiam numquam provident culpa labore, aliquid temporibus maiores molestiae, quidem beatae iusto voluptas!</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis eos adipisci, molestias alias quas sit laboriosam dolores, eaque, sapiente cumque animi ut sed distinctio. At alias sapiente obcaecati officia quae.</p>
+                
+                    <div class="comment-box">
+                        <h3> Leave a comment </h3>
+
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter your name...">
+                            <input type="email" placeholder="Enter email...">
+                            <textarea rows="5" placeholder="Leave your comment..."></textarea>
+                            <button type="submit" class="main-btn red-btn"> POST </button>
+                        </form>
+                    </div>
+                
+                
+                
+                </div>
+                <div class="blog-right">
+                    <h3> Post Categories </h3>
+                    <div>
+                        <span> New Artists</span>
+                        <span> 21</span>
+                    </div>
+                    <div>
+                        <span> Best Mentors</span>
+                        <span> 14</span>
+                    </div>
+                    <div>
+                        <span> Top Bands</span>
+                        <span> 35</span>
+                    </div>
+                    <div>
+                        <span> Billboard Top 100</span>
+                        <span> 52</span>
+                    </div>
+                    <div>
+                        <span> Guitar Solos</span>
+                        <span> 17</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------FOOTER------------------->
+        <section class="footer">
+            <h1>About us</h1>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Autem maiores nesciunt quaerat alias fugit vero atque consectetur amet? Nam iure omnis culpa error quos dolorem ex in porro quae voluptate?</h4>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu()
+            {
+                navLinks.style.right = "0";
+            }
+            function hideMenu()
+            {
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
